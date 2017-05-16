@@ -3,11 +3,11 @@ body {
     /*background: url("../img/home-office-336377.jpg");*/
     /*background: url("../img/bkg.svg");*/
     background: white;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /*height: 100%;
+    width: 100%;*/
+    /*overflow: hidden;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
     /*background: rgba(160, 255, 255, .3);*/
     font-size: 16px;
     font-family: 'Microsoft YaHei';
@@ -24,7 +24,7 @@ body {
     /*border: 1px solid black;*/
     box-shadow: 0 0px 20px rgba(0, 0, 0, .2);
     padding-top: 120px;
-    margin: 100px auto;
+    margin: auto auto;
 }
 
 
