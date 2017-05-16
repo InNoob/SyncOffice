@@ -17,12 +17,12 @@ body {
 #container {
     height: auto;
     width: auto;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 90%;
+    max-width: 90%;
     min-height: 50%;
     min-width: 50%;
     /*line-height: 100%;*/
-    /*margin: auto;*/
+    margin: auto;
 }
 
 .content {
@@ -102,17 +102,18 @@ label:hover {
     font-size: 18px;
     transition: 0.3s;
     transform: translate3d(45px, -50px, 0);
+    /*transform: translateY(-50px);*/
 }
 
 .lbl-boxmark-onhold {
     width: 45%;
     display: block;
     color: rgb(66, 133, 244);
-    ;
     font-family: "Microsoft YaHei", "Monaco";
     transition: 0.3s;
     font-size: 14px;
     transform: translate3d(45px, -75px, 0);
+    /*transform: translateY(-75px);*/
 }
 
 .underline {
