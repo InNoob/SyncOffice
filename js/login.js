@@ -69,4 +69,21 @@ window.onload = function() {
     //     $('#lbl-user').css("color", "black");
     // }
 
+    var optionbtn = $('.otheroptionbtn');
+    var options = $('.otheroption');
+    var option = $('.option');
+
+    optionbtn[0].onclick = function() {
+        $('#' + options[0].id).addClass("otheroption-display");
+        $('#' + option[0].id).addClass("option-display");
+        $('#' + option[1].id).addClass("option-display");
+        $('#' + option[2].id).addClass("option-display");
+    }
+    optionbtn[0].onblur = function() {
+        $('#' + options[0].id).removeClass("otheroption-display");
+        $('#' + option[0].id).removeClass("option-display");
+        $('#' + option[1].id).removeClass("option-display");
+        $('#' + option[2].id).removeClass("option-display");
+    }
+
 }
