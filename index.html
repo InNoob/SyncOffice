@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SyncOffice</title>
+    <!--重置浏览器-->
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="../css/myreset.css" rel="stylesheet" type="text/css" />
+    <!--<%--主要样式--%>-->
+    <link href="../css/mainstyle.css" rel="stylesheet" type="text/css" />
+    <!--<%--细节样式--%>-->
+    <link href="../css/detailstyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/styles/default.css" type="text/css">
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="js/jquery_slide.js" type="text/javascript"></script>
+    <script src="js/jquery.carousel.js" type="text/javascript"></script>-->
+    <script src="../js/core.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <div id="container-toppanel" class="container">
+            <div id="content-top">
+                <div id="logo">
+                    <div id="logo-img">
+                    </div>
+                    <a href="#">
+                        <span id="logo-text">SyncOffice
+                    </span></a>
+                </div>
+                <div id="content-panel">
+                    <ul class="list ul-top">
+                        <li class="list li-top">
+                            <a href="#"><span class="span-top-normal">加入集群</span></a>
+                        </li>
+                        <li class="list li-top">
+                            <a href="#"><span class="span-top-normal">创建集群</span></a>
+                        </li>
+                        <li class="li-top" style="width:90px;">
+                            <a href="#"><span class="span-top-normal">International</span></a>
+                            <ol class="downlist" id="downlist-internal">
+                                <li class="downlist-item-darrow">
+                                    <span class="darrow"></span>
+                                </li>
+                                <li class="downlist-item downlist-border-header">
+                                    <span class="span-top-lclose">{</span>
+                                    <span class="span-top"><a href="../en_US/index.html">English</a></span>
+                                    <span class="span-top-rclose">}</span>
+                                </li>
+                                <li class="downlist-item downlist-border-footer">
+                                    <span class="span-top-lclose">{</span>
+                                    <span class="span-top"><a href="../zh_CN/index.html">简体中文</a></span>
+                                    <span class="span-top-rclose">}</span>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content-more" class="li-top">
+                    <a href="#"><span class="span-top-normal">更&nbsp;&nbsp;多</span></a>
+                    <ol class="downlist" id="downlist-more">
+                        <li class="downlist-item-darrow">
+                            <span class="darrow"></span>
+                        </li>
+                        <li class="downlist-item downlist-border-header">
+                            <span class="span-top-lclose">{</span>
+                            <span class="span-top"><a href="#">用户注册</a></span>
+                            <span class="span-top-rclose">}</span>
+                        </li>
+                        <li class="downlist-item">
+                            <span class="span-top-lclose">{</span>
+                            <span class="span-top"><a href="#">如何使用</a></span>
+                            <span class="span-top-rclose">}</span>
+                        </li>
+                        <li class="downlist-item downlist-border-footer">
+                            <span class="span-top-lclose">{</span>
+                            <span class="span-top"><a href="#">其他问题</a></span>
+                            <span class="span-top-rclose">}</span>
+                        </li>
+                    </ol>
+                </div>
+                <div id="content-login">
+                    <input type="button" class="btn-ontop" name="btnlogin" id="btn-login" value="登 录" />
+                </div>
+            </div>
+        </div>
+
+        <div id="container-header" class="container">
+            <div id="content-title">
+                <span style="width:100%;text-align: center;" id="title1">不仅仅是办公，更多的是协同</span>
+                <h2><span style="width:100%;text-align: center;font-weight: 400;font-size:1.3em">协同，办公在云端</span></h2>
+            </div>
+            <div id="content-start">
+                <input type="button" name="btnStart" id="btnStart" value="现在开始" class="btn">
+            </div>
+
+            <div id="content-video">
+                <video id="vdo" preload="auto" loop="loop" autoplay>
+                    <source src="../img/mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div id="container-itembox" class="container">
+            <div id="container-itembox">
+                <!--<input type="button" id="content-itembox-btn-left" class="btn-scroll" />-->
+                <div id="content-itembox">
+                    <ul id="content-ul-itembox" class="list">
+                        <li class="li-itembox list">
+                            <div id="it1" class="itembox">
+                                在线代码存储与共享
+                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it2" class="itembox">
+                                版本控制
+                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it3" class="itembox">
+                                代码高亮
+                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it4" class="itembox">
+                                多权限管理
+                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it5" class="itembox">
+                                人工代码审查与评分
+                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <!--<li class="li-itembox"></li>
+                <li class="li-itembox"></li>
+                <li class="li-itembox"></li>-->
+                    </ul>
+                </div>
+                <!--<input type="button" id="content-itembox-btn-right" class="btn-scroll" />-->
+            </div>
+        </div>
+
+        <div id="container-introduction" class="container">
+            <a name="1F"></a>
+            hello1
+        </div>
+        <div id="container-laster" class="container">
+            <a name="2F"></a>
+            hello2
+        </div>
+        <div id="container-footer" class="container">
+            <a name="3F"></a>
+            hello3
+        </div>
+    </form>
+</body>
+<script async src="js/highlight.pack.js" type="text/javascript"></script>
+
+</html>
