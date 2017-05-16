@@ -14,6 +14,8 @@ window.onload = function() {
     //         alert('3');
     //     }
     // }
+    // alert(window.innerHeight);
+    $("#container").css("margin-top", (window.innerHeight - 602) / 2 + 'px');
 
     var e = $('.lbl-boxmark');
     // var el = $('.inputbox');

@@ -14,17 +14,29 @@ body {
     /*position: absolute;*/
 }
 
+#container {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 50%;
+    min-width: 50%;
+    /*line-height: 100%;*/
+    /*margin: auto;*/
+}
+
 .content {
-    height: 500px;
+    height: 600px;
+    /*height: 100%;*/
     width: 450px;
     color: black;
     border-radius: 8px;
     background: #fff;
     /*background: rgba(251, 251, 252, .9);*/
-    /*border: 1px solid black;*/
+    border: 1px solid transparent;
     box-shadow: 0 0px 20px rgba(0, 0, 0, .2);
-    padding-top: 120px;
-    margin: auto auto;
+    /*padding-top: 120px;*/
+    margin: auto;
 }
 
 
@@ -120,10 +132,12 @@ label:hover {
 }
 
 .slogan {
-    position: initial;
-    transform: translate3d(0, -60px, 0);
+    /*position: initial;*/
+    /*transform: translate3d(0, -60px, 0);*/
     /*border: 1px solid black;*/
-    padding-left: 45px;
+    width: 50%;
+    margin: 45px;
+    /*padding-left: 45px;*/
 }
 
 #sp3 {
@@ -146,14 +160,19 @@ label:hover {
 }
 
 .loginButton {
-    float: right;
-    margin-right: 10%;
+    /*float: left;*/
+    display: inline-block;
+    /*right: 0;*/
+    margin-left: 165px;
 }
 
 .otheroption-box {
-    display: inline-block;
+    /*display: inline-block;*/
     /*background: lavenderblush;*/
     /*border: 1px solid;s*/
+    height: 100px;
+    width: 80%;
+    margin: 0 40px;
     margin-left: 10%;
 }
 
@@ -173,6 +192,8 @@ label:hover {
     background: transparent;
     color: rgb(66, 133, 244);
     text-decoration: underline;
+    /*float: left;*/
+    display: inline-block;
 }
 
 .otheroption-display {
@@ -180,11 +201,12 @@ label:hover {
     height: 130px;
     padding-top: 20px;
     padding-bottom: 20px;
+    /*padding: 20px;*/
     transition: .3s;
-    transform: translate(-10px, -50px);
+    transform: translate(40px, -110px);
     box-shadow: 0 0 10px #666666;
     border-radius: 3px;
-    display: block;
+    display: inline-block;
     background: white;
 }
 
@@ -192,8 +214,14 @@ label:hover {
     display: block;
 }
 
+.otheroption {
+    /*float: left;*/
+    /*display: inline-block;*/
+}
+
 .otheroption a:hover {
     transition: .3s;
-    background: rgb(66, 133, 244);
-    color: white;
+    /*background: rgb(66, 133, 244);*/
+    background: #ddd;
+    /*color: ##545763;*/
 }
