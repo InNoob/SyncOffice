@@ -19,8 +19,6 @@
     margin: auto;
 }
 
-.header {}
-
 #logo {
     width: 100%;
 }
@@ -175,6 +173,19 @@
 
 .option:hover {
     background: rgba(0, 0, 0, .1);
+}
+
+.international {
+    margin: auto;
+    width: 450px;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+#international-list {
+    background: transparent;
+    border: 0;
 }
 
 

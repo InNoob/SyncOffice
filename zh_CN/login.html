@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%">
+<html lang="en">
 
 <head>
-    <title>协同办公平台-登录</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/myreset.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link href="../css/loginstyle.css" rel="stylesheet">
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/login.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/log.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/myreset.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <!--<div class="topmenu"></div>-->
-    <!--<div class="content">-->
-    <!--<div class="loginfo">-->
-    <div id="container">
-        <div class="content">
-            <div class="slogan">
-                <div style="margin-bottom:10px">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="193px" height="36px" viewBox="0 0 3860 720" preserveAspectRatio="xMidYMid meet">
+    <div id="container-login" class="container">
+        <div id="content-login" class="content">
+            <div class="header">
+                <div id="logo">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="140px" height="30px" viewBox="0 0 3860 720" preserveAspectRatio="xMidYMid meet">
                     <g id="layer1" fill="#ffffff" stroke="none">
                     <path d="M0 360 l0 -360 1930 0 1930 0 0 360 0 360 -1687 0 -1688 -1 31 -27 c18 -15 39 -38 47 -52 12 -19 107 -239 164 -378 3 -7 -3 -12 -14 -12 -16 0 -30 25 -69 121 -27 66 -53 121 -59 122 -5 0 -37 -54 -70 -120 -49 -100 -64 -122 -82 -122 -21 -1 -19 5 31 112 29 61 64 134 77 160 l24 48 -22 37 c-28 50 -66 76 -107 76 -25 0 -36 5 -39 18 -5 17 -21 18 -201 18 l-196 0 0 -360z m270 205 c55 -29 77 -109 44 -164 -9 -15 -54 -51 -100 -80 -46 -29 -89 -61 -94 -71 -19 -35 -11 -67 22 -95 30 -25 37 -27 95 -22 49 5 63 3 63 -7 0 -27 -110 -35 -164 -12 -44 18 -66 51 -66 98 0 56 18 85 74 120 126 77 146 98 146 147 0 23 -48 67 -82 75 -25 6 -90 -4 -131 -20 -13 -4 -17 -1 -17 14 0 24 17 29 113 31 44 1 79 -4 97 -14z m1160 6 c14 -4 27 -15 28 -25 3 -13 0 -17 -11 -13 -45 17 -103 17 -137 0 -89 -46 -97 -195 -14 -250 29 -19 111 -21 144 -3 17 9 20 8 20 -8 0 -40 -136 -46 -190 -9 -73 49 -99 160 -55 237 36 62 132 94 215 71z m370 -20 c43 -31 50 -57 50 -199 0 -148 -9 -181 -60 -207 -37 -19 -123 -19 -160 0 -51 26 -60 58 -60 214 0 139 0 141 28 172 45 50 145 60 202 20z m1523 23 c27 -5 37 -11 37 -25 0 -16 -5 -18 -27 -12 -60 16 -112 8 -144 -23 -105 -101 -22 -277 116 -244 53 13 55 12 55 -4 0 -33 -136 -36 -187 -5 -87 54 -99 205 -21 277 40 37 95 48 171 36z m373 -5 c25 -7 48 -18 51 -26 9 -22 -1 -24 -40 -8 -79 33 -147 10 -178 -61 -11 -24 -17 -49 -14 -54 4 -6 56 -10 121 -10 l114 0 0 -30 c0 -48 -30 -109 -61 -125 -40 -21 -106 -19 -144 5 -78 48 -95 186 -33 265 40 51 99 65 184 44z m-2846 -96 c0 -88 2 -99 26 -130 29 -38 80 -73 107 -73 9 0 26 9 37 20 18 18 20 33 20 150 0 125 1 130 21 130 20 0 20 -4 17 -146 -3 -139 -4 -147 -27 -165 -42 -34 -120 -20 -165 30 -22 24 -36 19 -36 -15 0 -17 -5 -24 -20 -24 -19 0 -20 7 -20 160 0 153 1 160 20 160 19 0 20 -7 20 -97z m1230 -26 c0 -82 4 -127 12 -135 7 -7 38 -12 70 -12 32 0 58 -4 58 -10 0 -6 -26 -10 -59 -10 -71 0 -86 -13 -76 -67 10 -55 23 -73 61 -89 25 -10 45 -12 74 -5 36 8 40 7 40 -10 0 -17 -8 -19 -70 -19 -62 0 -73 3 -101 28 -26 23 -32 38 -37 83 -6 65 -15 79 -53 79 -16 0 -29 5 -29 10 0 6 13 10 28 10 47 0 52 14 52 147 0 103 2 123 15 123 13 0 15 -20 15 -123z m370 0 c0 -82 4 -127 12 -135 7 -7 38 -12 70 -12 32 0 58 -4 58 -10 0 -6 -26 -10 -59 -10 -71 0 -86 -13 -76 -67 10 -55 23 -73 61 -89 25 -10 45 -12 74 -5 36 8 40 7 40 -10 0 -17 -8 -19 -70 -19 -62 0 -73 3 -101 28 -26 23 -32 38 -37 83 -6 65 -15 79 -53 79 -16 0 -29 5 -29 10 0 6 13 10 28 10 47 0 52 14 52 147 0 103 2 123 15 123 13 0 15 -20 15 -123z m500 109 c0 -10 -14 -16 -42 -18 l-43 -3 -3 -142 -3 -143 -64 0 c-50 0 -65 3 -65 14 0 10 14 16 43 18 l42 3 3 143 3 142 64 0 c50 0 65 -3 65 -14z m-85 -441 c0 -22 -31 -33 -47 -17 -17 17 -1 44 24 40 15 -2 23 -10 23 -23z"/>
                     <path d="M1635 516 c-31 -31 -38 -74 -33 -197 4 -99 4 -102 36 -130 45 -40 99 -40 144 0 30 27 32 32 36 119 9 181 -15 232 -108 232 -40 0 -56 -5 -75 -24z"/>
@@ -77,37 +75,38 @@
                     <path d="M2037 584 c-4 -4 -7 -65 -7 -135 l0 -128 -37 -3 c-33 -3 -38 -6 -38 -28 0 -22 5 -25 36 -28 l37 -3 4 -56 c4 -50 9 -60 46 -95 39 -36 44 -38 110 -38 69 0 92 10 92 40 0 29 -19 38 -58 29 -58 -13 -99 5 -112 49 -19 69 -17 71 58 74 64 3 67 4 67 28 0 24 -3 25 -67 28 l-67 3 -3 132 -3 132 -25 3 c-14 2 -29 0 -33 -4z"/>
                     <path d="M2407 584 c-4 -4 -7 -65 -7 -135 l0 -128 -37 -3 c-33 -3 -38 -6 -38 -28 0 -22 5 -25 36 -28 l37 -3 4 -56 c4 -50 9 -60 46 -95 39 -36 44 -38 110 -38 69 0 92 10 92 40 0 29 -19 38 -58 29 -58 -13 -99 5 -112 49 -19 69 -17 71 58 74 64 3 67 4 67 28 0 24 -3 25 -67 28 l-67 3 -3 132 -3 132 -25 3 c-14 2 -29 0 -33 -4z"/>
                     </g>
-
-                </svg>
+                    </svg>
                 </div>
-                <span id="sp2">登录</span><br>
-                <span id="sp3">继续使用协同办公</span>
+                <div id="title">登录</div>
+                <div id="head-text">继续使用协同办公</div>
             </div>
-            <div class="allinfo">
-                <div class="div-userinfo" id="div-userid">
-                    <input type="text" id="userid" class="userinfo" value="">
-                    <div class="underline" id="udline-user"></div>
+            <div class="inputtext-box">
+                <div class="inputtext" id="inputtext-name">
+                    <input type="text" id="user" class="input-text" value="">
+                    <div class="underline" id="underline-user"></div>
                     <label for="" class="lbl-boxmark" id="lbl-user">电子邮件地址或电话号码</label>
                 </div>
-                <div class="div-userinfo" id="div-userpwd">
-                    <input type="password" id="userpwd" class="userinfo">
-                    <div class="underline" id="udline-pass"></div>
+            </div>
+            <div class="inputtext-box">
+                <div class="inputtext" id="inputtext-pass">
+                    <input type="password" id="pass" class="input-text">
+                    <div class="underline" id="underline-pass"></div>
                     <label for="" class="lbl-boxmark" id="lbl-pass">输入您的密码</label>
                 </div>
             </div>
-            <div class="otheroption-box">
-                <input class="otheroptionbtn" id="otheroptionbtn" type="button" value="更多选项">
-                <div class="loginButton"> <input type="submit" class="btnlogin" value="登  录">
+            <div class="loginbox">
+                <div id="more-list">
+                    <input type="button" id="more" value="更多选项">
+                    <div class="otheroption" id="otheroption-list">
+                        <a href=""><span class="option" id="option">忘记了电子邮件地址？</span></a>
+                        <a href=""><span class="option" id="option2">创建账号</span></a>
+                        <a href=""><span class="option" id="option3">常见问题解答</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="otheroption" id="otheroption-list">
-                <a href=""><span class="option" id="option">忘记了电子邮件地址？</span></a>
-                <a href=""><span class="option" id="option2">创建账号</span></a>
-                <a href=""><span class="option" id="option3">常见问题解答</span></a>
+                <input type="button" id="btnlogin" value="下一步">
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
