@@ -57,7 +57,7 @@
 }
 
 .lbl-boxmark {
-    width: 60%;
+    width: 100%;
     display: block;
     color: #757575;
     font-family: "Microsoft YaHei", "Monaco";
@@ -67,7 +67,7 @@
 }
 
 .lbl-boxmark-onhold {
-    width: 60%;
+    width: 100%;
     display: block;
     color: rgb(66, 133, 244);
     font-family: "Microsoft YaHei", "Monaco";
@@ -176,19 +176,25 @@
 }
 
 .language-Help {
-    margin: auto;
+    height: 40px;
     width: 450px;
+    max-width: 450px;
+    color: black;
+    margin: 0 auto;
     padding-top: 20px;
-    padding-left: 10px;
     font-size: 12px;
 }
 
 #international-list {
+    display: inline-block;
     background: transparent;
     border: 0;
 }
 
-#help {}
+#help {
+    display: inline-block;
+    /*float: right;*/
+}
 
 
 /*animation: quantumWizPaperInputRemoveUnderline .3s cubic-bezier(0.4,0,0.2,1);*/

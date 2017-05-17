@@ -22,5 +22,7 @@ a,
 a:link,
 a:visited,
 a:active {
+    text-decoration: none;
+    outline: 0;
     color: #545763;
 }
