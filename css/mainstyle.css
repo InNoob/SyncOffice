@@ -80,8 +80,16 @@
      border-bottom: 3px solid transparent;
  }
  
- .span-top-normal:hover {
-     border-bottom: 3px solid orange;
+ .span-top-normal:hover .span-top-normal-button {
+     width: 100%;
+ }
+ 
+ .span-top-normal-button {
+     height: 3px;
+     width: 0%;
+     background-color: #2ca7f8;
+     margin: auto;
+     transition-duration: 0.3s;
  }
  
  #content-panel>ul>li>a:after {
