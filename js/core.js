@@ -94,6 +94,7 @@ window.onload = function() {
 
 
 window.onscroll = function() {
+    
     var y = window.scrollY;
     var h = window.innerHeight;
     if (y < h) {
@@ -139,12 +140,47 @@ window.onscroll = function() {
         $('#btn-login').addClass("btn");
         $('#logo-text').css("color", "#545763");
     }
+    if (y>h&&y<2*h+380) {
+
+        $('.picbox').addClass('picbox-onhold');
+        $('.picbox').removeClass('picbox');
+
+        $('#pic_1').addClass('p1');
+        $('#pic_2').addClass('p2');
+        $('#pic_3').addClass('p3');
+        $('#pic_4').addClass('p4');
+        $('#pic_5').addClass('p5');
+        $('#pic_6').addClass('p6');
+        $('#pic_7').addClass('p7');
+        $('#pic_8').addClass('p8');
+        // $('#pic_1').css("height","55px");
+        // $('#pic_1').css("width","80px");
+        // $('#pic_2').css("height","80px");
+        // $('#pic_2').css("width","115px");
+        // $('#pic_3').css("height","90px");
+        // $('#pic_3').css("width","140px");
+        // $('#pic_4').css("height","120px");
+        // $('#pic_4').css("width","180px");
+        // $('#pic_5').css("height","150px");
+        // $('#pic_5').css("width","230px");
+        // $('#pic_6').css("height","200px");
+        // $('#pic_6').css("width","300px");
+        // $('#pic_7').css("height","220px");
+        // $('#pic_7').css("width","360px");
+        // $('#pic_8').css("height","260px");
+        // $('#pic_8').css("width","420px");
+
+    }else{
+        $('.picbox-onhold').addClass('picbox');
+        $('.picbox-onhold').removeClass('picbox-onhold');
+    }
+
 
 }
 
 
 
-window.onmousewheel = function() {
+window.onwheel = function() {
     document.body.style.overflowY = "visible";
 }
 

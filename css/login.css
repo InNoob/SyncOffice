@@ -126,6 +126,7 @@
     margin-top: -10px;
     position: fixed;
     transition: 0.4s;
+    /*transition-delay: .1s;*/
 }
 
 #btnlogin {
