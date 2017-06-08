@@ -8,6 +8,46 @@ var inte = null;
 // 		return document.getElementsByClassName(tar.substring(1,tar.length));	
 // 	}
 // }
+var scrollNumber = 0;
+
+function scrollBtnLeft() {
+    if (scrollNumber == 1200) {
+        setTimeout("scrollBtnRight()", 1000);
+        return false;
+    }
+    scrollNumber += 240;
+    $("#content-ul-itembox").css("transform", "translate3d(-" + scrollNumber + "px, 0, 0)");
+    // clearInterval("scrollBtnLeft()");s
+    setTimeout("scrollBtnLeft()", 2000);
+    return false;
+}
+
+function scrollBtnRight() {
+    if (scrollNumber == 0) {
+        setTimeout("scrollBtnLeft()", 1000);
+        return false;
+    }
+    scrollNumber -= 240
+    $("#content-ul-itembox").css("transform", "translate3d(-" + scrollNumber + "px, 0, 0)");
+    setTimeout("scrollBtnRight()", 2000);
+    return false;
+}
+var fla = false;
+
+function scrollStop() {
+    // if (!fla) {
+    //     alert("stop");
+    //     fla = true;
+    // }
+}
+
+function scrollStart() {
+    // if (fla) {
+    //     alert("start");
+    //     fla = false;
+    // }
+
+}
 
 function isFullScreen() {
     if (
@@ -24,6 +64,8 @@ function isFullScreen() {
 
 
 window.onload = function() {
+    setTimeout("scrollBtnLeft()", 1000);
+
     // window.scrollTo(0, 12);
     // $("#title1").css("font-size", window.screen.width * 50 / 1366 + "px"); 
     $("#title1").css("font-size", 3 + "em");
@@ -94,7 +136,7 @@ window.onload = function() {
 
 
 window.onscroll = function() {
-    
+
     var y = window.scrollY;
     var h = window.innerHeight;
     if (y < h) {
@@ -140,7 +182,7 @@ window.onscroll = function() {
         $('#btn-login').addClass("btn");
         $('#logo-text').css("color", "#545763");
     }
-    if (y>h&&y<2*h+380) {
+    if (y > h && y < 2 * h + 380) {
 
         $('.picbox').addClass('picbox-onhold');
         $('.picbox').removeClass('picbox');
@@ -170,7 +212,7 @@ window.onscroll = function() {
         // $('#pic_8').css("height","260px");
         // $('#pic_8').css("width","420px");
 
-    }else{
+    } else {
         $('.picbox-onhold').addClass('picbox');
         $('.picbox-onhold').removeClass('picbox-onhold');
     }

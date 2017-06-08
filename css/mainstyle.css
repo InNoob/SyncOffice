@@ -241,31 +241,32 @@
  .btn-scroll:hover {
      color: #fff;
  }
- .parallelbox{
+ 
+ .parallelbox {
      display: inline-block;
-     font-family:'Microsoft YaHei','Sans Serif','Monaco','Arial';
+     font-family: 'Microsoft YaHei', 'Sans Serif', 'Monaco', 'Arial';
  }
-
- .picbox{
+ 
+ .picbox {
      height: 0;
      width: 0;
      opacity: 0;
      margin: 0;
      /*margin-left: 200px;*/
      /*transition: 0.4s;*/
-     position:absolute;
+     position: absolute;
      /*transition: 0.4s;*/
      /*border:1px solid black;*/
      background: center no-repeat;
  }
- .picbox-onhold{
+ 
+ .picbox-onhold {
      opacity: 1;
      height: 0;
      width: 0;
-     position:absolute;
+     position: absolute;
      transition: 0.5s;
      margin-left: 0;
      /*border:1px solid black;*/
      background: center no-repeat;
-
  }
