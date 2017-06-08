@@ -223,7 +223,7 @@
  
  .btn-ontop:hover {
      border: 1px solid orangered;
-     background-color: orangered;
+     /*background-color: orangered;*/
      color: #FFF;
      transform: translate3d(0, -1px, 0);
  }
