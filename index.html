@@ -110,44 +110,80 @@
                 </video>
             </div>
         </div>
-
         <div id="container-itembox" class="container">
             <div id="container-itembox">
                 <!--<input type="button" id="content-itembox-btn-left" class="btn-scroll" />-->
-                <div id="content-itembox">
+                <button id="scrollbtn-left" onclick="return scrollBtnLeft()"><</button>
+                <div id="content-itembox" onmouseover="scrollStop()" onmouseout="scrollStart()">
                     <ul id="content-ul-itembox" class="list">
                         <li class="li-itembox list">
                             <div id="it1" class="itembox">
                                 在线代码存储与共享
-                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-normal">这里是初始文本1</div>
                                 <div class="itembox-content-hover">这里是选定文本</div>
                             </div>
                         </li>
                         <li class="li-itembox list">
                             <div id="it2" class="itembox">
                                 版本控制
-                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-normal">这里是初始文本2</div>
                                 <div class="itembox-content-hover">这里是选定文本</div>
                             </div>
                         </li>
                         <li class="li-itembox list">
                             <div id="it3" class="itembox">
                                 代码高亮
-                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-normal">这里是初始文本3</div>
                                 <div class="itembox-content-hover">这里是选定文本</div>
                             </div>
                         </li>
                         <li class="li-itembox list">
                             <div id="it4" class="itembox">
                                 多权限管理
-                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-normal">这里是初始文本4</div>
                                 <div class="itembox-content-hover">这里是选定文本</div>
                             </div>
                         </li>
                         <li class="li-itembox list">
                             <div id="it5" class="itembox">
                                 人工代码审查与评分
-                                <div class="itembox-content-normal">这里是初始文本</div>
+                                <div class="itembox-content-normal">这里是初始文本5</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+
+                        <li class="li-itembox list">
+                            <div id="it5" class="itembox">
+                                人工代码审查与评分
+                                <div class="itembox-content-normal">这里是初始文本6</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it5" class="itembox">
+                                人工代码审查与评分
+                                <div class="itembox-content-normal">这里是初始文本7</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it5" class="itembox">
+                                人工代码审查与评分
+                                <div class="itembox-content-normal">这里是初始文本8</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it5" class="itembox">
+                                人工代码审查与评分
+                                <div class="itembox-content-normal">这里是初始文本9</div>
+                                <div class="itembox-content-hover">这里是选定文本</div>
+                            </div>
+                        </li>
+                        <li class="li-itembox list">
+                            <div id="it5" class="itembox">
+                                人工代码审查与评分
+                                <div class="itembox-content-normal">这里是初始文本10</div>
                                 <div class="itembox-content-hover">这里是选定文本</div>
                             </div>
                         </li>
@@ -157,6 +193,7 @@
                     </ul>
                 </div>
                 <!--<input type="button" id="content-itembox-btn-right" class="btn-scroll" />-->
+                <button id="scrollbtn-right" onclick="return scrollBtnRight();">></button>
             </div>
         </div>
 
