@@ -223,7 +223,7 @@
  
  .btn-ontop:hover {
      border: 1px solid orangered;
-     /*background-color: orangered;*/
+     background-color: orangered;
      color: #FFF;
      transform: translate3d(0, -1px, 0);
  }
@@ -270,3 +270,14 @@
      /*border:1px solid black;*/
      background: center no-repeat;
  }
+
+ .logoword{
+    margin:0;
+    border:0;
+    outline:0;
+    float:left;
+    /*display: inline-flex;*/
+    font-weight:500;
+    font-size:30px;
+    font-family:'Microsoft YaHei';
+}

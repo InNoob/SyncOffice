@@ -21,6 +21,8 @@
 
 #logo {
     width: 100%;
+    height: 35px;
+    display: block;
 }
 
 #title {
@@ -127,8 +129,8 @@
     position: fixed;
     transition: 0.4s;
     /*transition-delay: .1s;*/
+    /*display: block;*/
 }
-
 #btnlogin {
     height: 36px;
     width: 88px;
@@ -149,24 +151,24 @@
     opacity: 0;
     height: 118px;
     width: 150px;
-    /*position: fixed;*/
     padding-top: 17px;
     padding-bottom: 17px;
-    /*transition: .1s;*/
     margin-top: 35px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, .4);
     border-radius: 3px;
     background: white;
-    /*display: none;*/
     z-index: 9999;
-}
-
+    /*position: fixed;
+    transition-delay: 0.2s;*/
+    transition: .2s;
+    /*display: none;*/
+} 
 .option {
     width: 200px;
     height: 40px;
     color: #222;
     padding: 0 25px;
-    font-family: 'Microsoft YaHei', 'Monaco';
+    font-family: 'Microsoft YaHei','Roboto', 'Arial';
     font-size: 15px;
     font-weight: 400;
     line-height: 40px;
@@ -196,6 +198,15 @@
     display: inline-block;
     /*float: right;*/
 }
-
+.logoword{
+    margin:0;
+    border:0;
+    outline:0;
+    float:left;
+    /*display: inline-flex;*/
+    font-weight:500;
+    font-size:30px;
+    font-family:'Microsoft YaHei';
+}
 
 /*animation: quantumWizPaperInputRemoveUnderline .3s cubic-bezier(0.4,0,0.2,1);*/
