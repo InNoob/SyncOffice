@@ -4,6 +4,7 @@ window.onload = function() {
     var e = $('.lbl-boxmark');
     var a = $('.input-text');
     var line = $('.underline');
+    if(null!=a[0])
     a[0].onfocus = function() {
         $('#' + e[0].id).addClass("lbl-boxmark-onhold");
         $('#' + e[0].id).removeClass("lbl-boxmark");
@@ -11,6 +12,7 @@ window.onload = function() {
         $('#' + line[0].id).addClass("underline-onhold");
         $('#' + line[0].id).removeClass("underline");
     }
+    if(null!=a[1])
     a[1].onfocus = function() {
         $('#' + e[1].id).addClass("lbl-boxmark-onhold");
         $('#' + e[1].id).removeClass("lbl-boxmark");
@@ -18,6 +20,7 @@ window.onload = function() {
         $('#' + line[1].id).addClass("underline-onhold");
         $('#' + line[1].id).removeClass("underline");
     }
+    if(null!=a[0])
     e[0].onclick = function() {
         $('#' + e[0].id).addClass("lbl-boxmark-onhold");
         $('#' + e[0].id).removeClass("lbl-boxmark");
@@ -25,6 +28,7 @@ window.onload = function() {
         $('#' + line[0].id).addClass("underline-onhold");
         $('#' + line[0].id).removeClass("underline");
     }
+    if(null!=a[1])
     e[1].onclick = function() {
         $('#' + e[1].id).addClass("lbl-boxmark-onhold");
         $('#' + e[1].id).removeClass("lbl-boxmark");
@@ -32,7 +36,7 @@ window.onload = function() {
         $('#' + line[1].id).addClass("underline-onhold");
         $('#' + line[1].id).removeClass("underline");
     }
-
+if(null!=a[0])
     a[0].onblur = function() {
         if (a[0].value != "") return;
         $('#' + e[0].id).addClass("lbl-boxmark");
@@ -40,6 +44,7 @@ window.onload = function() {
         $('#' + line[0].id).addClass("underline");
         $('#' + line[0].id).removeClass("underline-onhold");
     }
+    if(null!=a[1])
     a[1].onblur = function() {
         if (a[1].value != "") return;
         $('#' + e[1].id).addClass("lbl-boxmark");

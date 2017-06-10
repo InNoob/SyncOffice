@@ -62,7 +62,8 @@
     width: 100%;
     display: block;
     color: #757575;
-    font-family: "Microsoft YaHei", "Roboto","Arial";
+    /*font-family: 'Microsoft YaHei', 'Roboto','Arial';*/
+    /*font-family: 'Roboto';*/
     font-size: 17px;
     transition: 0.3s;
     transform: translateY(-25px);
@@ -72,7 +73,8 @@
     width: 100%;
     display: block;
     color: rgb(66, 133, 244);
-    font-family: "Microsoft YaHei", "Roboto","Arial";
+    /*font-family: 'Roboto';*/
+    /*font-family: 'Microsoft YaHei', 'Roboto','Arial';*/
     transition: 0.3s;
     font-size: 14px;
     transform: translateY(-55px);
